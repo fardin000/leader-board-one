@@ -7,7 +7,11 @@ body{
 }
 main{
     display: flex;
-    justify-content: center; 
+    flex-direction: column;
+    align-items: center;
+    
+
+    
 }
 .container{
     width: 870px;
@@ -48,16 +52,44 @@ hr{
 
 .blog-container{
     display: grid;
+    grid-gap: 25px;
     grid-template-columns: repeat(2, 1fr);
+}
+.blog-header{
+    font-size: 24px;
+    color: #562EFF;
+    padding-top: 30px;
+    padding-left: 30px; 
 }
 .top-blogs{
     display: flex;
+    
+    align-items: center;
 }
 .top-blogs img{
     width: 224px;
     height: 127px; 
+    padding-top: 30px;
     padding-left: 30px;
+    padding-bottom: 42px;
 }
 .top-blogs h4{
     padding-left: 10px;
+}
+
+/* latest courses starts
+*/
+
+.course-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 870px;
+}
+.course-details{
+    margin-top: 10px;
+    grid-gap: 50px;
+}
+.course-details img{
+    width: 266px;
+    height: 141px;
 }
